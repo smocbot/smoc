@@ -1,5 +1,10 @@
-# Github to Azure deployment test
-repo to test ease of deploying a .net web api solution to azure
+# Microsoft System Center Service Manager - OMS Connector
+App to connect your SCSM to OMS. Click on the `deploy to Azure` button to start.
+
+# License
+Click here to read [License](./LICENSE.md)
 
 # Deployment Button
 [![Deploy to Azure](http://azuredeploy.net/deploybutton.png)](https://azuredeploy.net/?repository=https://github.com/SMOMSConnector/ConnectorV1)
+
+# Documentation - TBD
