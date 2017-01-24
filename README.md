@@ -5,6 +5,6 @@ App to connect your SCSM to OMS. Click on the `deploy to Azure` button to start.
 Click here to read [License](./LICENSE.md)
 
 # Deployment Button
-[![Deploy to Azure](http://azuredeploy.net/deploybutton.png)](https://azuredeploy.net/?repository=https://github.com/SMOMSConnector/ConnectorV1)
+[![Deploy to Azure](http://azuredeploy.net/deploybutton.png)](https://azuredeploy.net/?repository=https://github.com/SystemCenterServiceManager/SMOMSConnector)
 
 # Documentation - TBD
