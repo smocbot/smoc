@@ -2,16 +2,25 @@
     padding-top: 50px;
     padding-bottom: 20px;
 }
-
 /* Set padding to keep content from hitting the edges */
 .body-content {
     padding-left: 15px;
     padding-right: 15px;
 }
-
 /* Set width on the form input elements since they're 100% wide by default */
 input,
 select,
 textarea {
-    max-width: 280px;
+    max-width: 300px;
+}
+div#test_connection_result {
+    background: whitesmoke;
+    font-family: consolas;
+    color: black;
+}
+div#test_connection_result .success {
+    color: #00821d;
+}
+div#test_connection_result .failed {    
+    color: #ff0000;
 }
