@@ -97,3 +97,42 @@
         </div>
     }
 }
+<div class="clearfix" style="height: 20px"></div>
+@{
+    if (ViewBag.IsSMConfigured && ViewBag.IsADConfigured)
+    {
+        <div class="panel panel-default" id="test_connection_form">
+            <div class="panel-heading">Test current configuration</div>
+            <div class="panel-body">
+                <form class="form-horizontal" onsubmit="return false">
+                    <div class="form-group">
+                        <label class="control-label col-sm-2" for="client_id">Client ID:</label>
+                        <div class="col-sm-10 col-lg-10"">
+                            <input type="text" class="form-control" id="client_id" placeholder="Enter Client ID" required="required">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-sm-2" for="client_secret">Client Secret:</label>
+                        <div class="col-sm-10 col-lg-10"">
+                            <input type="password" class="form-control" id="client_secret" placeholder="Enter Client Secret"  required="required">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-sm-2" for="client_url">SMOC URL:</label>
+                        <div class="col-sm-10 col-lg-10">
+                            <input type="url" class="form-control" id="client_url" readonly="readonly"  required="required">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-offset-2 col-sm-10">
+                            <button type="submit" id="test_connection" class="btn btn-default">Begin Test</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="panel-body" id="test_connection_result">
+                <div>Click on Begin Test to validate current Configuration.</div>
+            </div>
+        </div>
+    }
+}

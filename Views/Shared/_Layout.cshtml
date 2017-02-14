@@ -13,20 +13,21 @@
             <div class="navbar-header">
                 <a class="navbar-brand" href="#">Service Manager Endpoint</a>
             </div>
-        </div>
-        @{
-            if (ViewBag.IsADConfigured)
-            {
-                <ul class="nav navbar-nav navbar-right">
-                    <li>
-                        <a href="#">
-                            <span class="glyphicon glyphicon-user"></span>
-                            @ViewBag.Tenant
-                        </a>
-                    </li>
-                </ul>
+            @{
+                if (ViewBag.IsADConfigured)
+                {
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="#">
+                                <span class="glyphicon glyphicon-user"></span>
+                                @ViewBag.Tenant
+                            </a>
+                        </li>
+                    </ul>
+                }
             }
-        }
+        </div>
+        
     </div>
     <div class="container body-content">
         @RenderBody()
@@ -44,6 +45,7 @@
 
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
+    @Scripts.Render("~/bundles/smoc")
     @RenderSection("scripts", required: false)
 </body>
 </html>
